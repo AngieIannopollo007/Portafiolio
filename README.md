@@ -9,3 +9,6 @@ El objetivo de este proyecto es presentar mi perfil profesional, mi formación, 
 📬 Contacto
 📧 iannopolloangeline@gmail.com
 💻 GitHub: https://github.com/AngieIannopollo007
+
+NO ESTÁ TERMINADO, FALTA PONER BIEN LOS PROJECTOS.
+GRACIASS
