@@ -1,0 +1,227 @@
+/*====================================
+        PROYECTOS
+====================================*/
+
+.proyectos{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:80px 30px;
+
+}
+
+.cards-proyectos{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.proyecto{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+    135deg,
+    rgba(37,99,235,.95),
+    rgba(124,58,237,.95),
+    rgba(56,189,248,.95));
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+    transition:.45s;
+
+}
+
+.proyecto::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-150%;
+
+    left:-60%;
+
+    width:70%;
+
+    height:350%;
+
+    background:rgba(255,255,255,.20);
+
+    transform:rotate(28deg);
+
+    transition:.8s;
+
+}
+
+.proyecto:hover::before{
+
+    left:150%;
+
+}
+
+.proyecto:hover{
+
+    transform:translateY(-12px) scale(1.02);
+
+    box-shadow:0 30px 60px rgba(37,99,235,.45);
+
+}
+
+.proyecto i{
+
+    width:75px;
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+.proyecto h3{
+
+    color:white;
+
+    font-size:1.6rem;
+
+    margin-bottom:18px;
+
+}
+
+.proyecto p{
+
+    color:#eef4ff;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+.btn-card{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:white;
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(12px);
+
+    transition:.35s;
+
+}
+
+.btn-card:hover{
+
+    background:white;
+
+    color:#2563eb;
+
+    transform:translateY(-5px);
+
+}
+
+/*====================================
+        TITULO
+====================================*/
+
+.proyectos h2{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.hero .descripcion{
+
+    max-width:650px;
+
+}
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media(max-width:1000px){
+
+.cards-proyectos{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.proyecto{
+
+padding:28px;
+
+}
+
+.proyecto h3{
+
+font-size:1.35rem;
+
+}
+
+.proyectos h2{
+
+font-size:2.2rem;
+
+}
+
+}
